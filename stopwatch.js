@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name     4me Stopwatch
-// @author   Thomas
+// @author   Thomas&Hannes
 // @version  4
 // @grant    none
 // @match    https://savaco-internal-it.4me.com/*
@@ -8,10 +8,11 @@
 // @downloadURL https://raw.githubusercontent.com/Vegataux/KLOK/main/stopwatch.js
 // ==/UserScript==
 
-var div = document.getElementById('userbox');
+var div = document.getElementById('toolbar');
 
 div.innerHTML += '\
-<h2 id="watch">00:00:00</h2>\
+<div style=float:right; right:50px>\
+<div<h1 id="watch">00:00:00</h1>\
 <div class="buttons">\
 <button id="start">Start</button>\
 <button id="pause">Pause</button>\
