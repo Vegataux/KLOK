@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name     4me Stopwatch
-// @author   Thomas&Hannes
+// @author   TVH
 // @version  4.5
 // @grant    none
 // @match    https://savaco-internal-it.4me.com/*
