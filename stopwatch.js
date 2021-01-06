@@ -1,23 +1,30 @@
 // ==UserScript==
 // @name     4me Stopwatch
 // @author   Thomas&Hannes
-// @version  4.2
+// @version  4.5
 // @grant    none
 // @match    https://savaco-internal-it.4me.com/*
 // @upateURL https://raw.githubusercontent.com/Vegataux/KLOK/main/stopwatch.js
-// @downloadURL https://raw.githubusercontent.com/Vegataux/KLOK/main/stopwatch.js
+// @downloadURL https://raw.githubusercontent.cohm/Vegataux/KLOK/main/stopwatch.js
 // ==/UserScript==
 
-var div = document.getElementById('userbox');
-
-div.innerHTML += '\
-<h2 id="watch">00:00:00</h2>\
-<div class="buttons">\
+var clock         = document.createElement ('div');
+clock.innerHTML   = '\
+<style>\
+h5{\
+color: white;\
+}\
+</style>\
+<div style="display: flex;padding-top: 6px;height: 26px;right:270px;position:fixed;z-index:99999";>\
+<h5 id="watch">00:00:00</h5>\
 <button id="start">Start</button>\
 <button id="pause">Pause</button>\
 <button id="reset">Reset</button>\
 </div>\
 ';
+
+document.body.appendChild (clock);
+
 
 const watch = document.querySelector('#watch');
 let milliseconds = 0;
@@ -45,7 +52,7 @@ function resetWatch() {
   watch.classList.remove('paused');
   clearInterval(timer);
   milliseconds = 0;
-  watch.innerHTML= '00:00:00:00';
+  watch.innerHTML= '00:00:00';
 };
 
 document.addEventListener('click', (e) =>{
