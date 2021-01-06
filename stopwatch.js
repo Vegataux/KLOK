@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name     4me Stopwatch
-// @version  1
+// @version  2
 // @grant    none
 // @match    https://savaco-internal-it.4me.com/*
 // ==/UserScript==
-
+test
 var div = document.getElementById('userbox');
 
 div.innerHTML += '\
