@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name     4me Stopwatch
 // @author   Thomas&Hannes
-// @version  4
+// @version  4.1
 // @grant    none
 // @match    https://savaco-internal-it.4me.com/*
 // @upateURL https://raw.githubusercontent.com/Vegataux/KLOK/main/stopwatch.js
