@@ -1,10 +1,13 @@
 // ==UserScript==
 // @name     4me Stopwatch
-// @version  2
+// @author	 Thomas
+// @version  3
 // @grant    none
 // @match    https://savaco-internal-it.4me.com/*
+// @upateURL https://raw.githubusercontent.com/Vegataux/KLOK/main/stopwatch.js
+// @downloadURL https://raw.githubusercontent.com/Vegataux/KLOK/main/stopwatch.js
 // ==/UserScript==
-test
+
 var div = document.getElementById('userbox');
 
 div.innerHTML += '\
